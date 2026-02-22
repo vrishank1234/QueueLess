@@ -25,6 +25,11 @@ const Home = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
+      if (!supabase) {
+        setError("Supabase not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in Vercel.");
+        setLoading(false);
+        return;
+      }
       try {
         const { data, error: fetchError } = await supabase
           .from(ITEMS_TABLE)
