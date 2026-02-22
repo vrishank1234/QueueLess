@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Onboarding from "./pages/Onboarding.jsx";
-import Login from "./pages/login.jsx";
+import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
 import Placeholder from "./pages/Placeholder.jsx";
 
