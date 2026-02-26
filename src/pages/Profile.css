@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.profile {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 5rem;
+}
+
+.profile__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem 0.75rem;
+}
+
+.profile__back-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #22c55e;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.profile__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.profile__main {
+  flex: 1;
+  padding: 0 1.25rem 1rem;
+  overflow-y: auto;
+}
+
+.profile__card {
+  background: #f9fafb;
+  border-radius: 1rem;
+  padding: 0.9rem 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.profile__card + .profile__card {
+  margin-top: 0.75rem;
+}
+
+.profile__user-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.profile__avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #a855f7, #4f46e5);
+}
+
+.profile__user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.profile__email,
+.profile__phone {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.profile__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.profile__item + .profile__item {
+  border-top: 1px solid #e5e7eb;
+}
+
+.profile__item-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.profile__item-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.profile__item-icon--orders {
+  background: #22c55e;
+}
+
+.profile__item-icon--terms {
+  background: #f97316;
+}
+
+.profile__item-icon--about {
+  background: #3b82f6;
+}
+
+.profile__item-icon--dev {
+  background: #8b5cf6;
+}
+
+.profile__chevron svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.profile__logout-wrap {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profile__logout-btn {
+  min-width: 9rem;
+  border-radius: 999px;
+  border: 1px solid #111827;
+  padding: 0.7rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+}
+
+.profile__logout-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+

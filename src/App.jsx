@@ -3,7 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Onboarding from "./pages/Onboarding.jsx";
 import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
-import Placeholder from "./pages/Placeholder.jsx";
+import Categories from "./pages/Categories.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
+import Cart from "./pages/Cart.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import Profile from "./pages/Profile.jsx";
 
 const App = () => {
   return (
@@ -13,9 +17,11 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Onboarding />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/categories" element={<Placeholder title="Categories" />} />
-          <Route path="/cart" element={<Placeholder title="Cart" />} />
-          <Route path="/profile" element={<Placeholder title="Profile" />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </div>
